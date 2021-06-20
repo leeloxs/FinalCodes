@@ -1,5 +1,5 @@
 @extends('layouts.app')
- 
+<title>My profile</title>
 @section('title')
 My profile
 @endsection
@@ -85,10 +85,7 @@ My profile
                        <button type="submit" class="btn btn-primary">Update Profile</button>
                       </div>
                    </div>
-                   <div class="col-md-4">
-                      <img name="image" src="{{ asset('/img/prof.png') }}" value="{{ Auth::user()->image}}" class="w-75" alt="">
-                       </div>
-                   </div>
+                  
 
                 </div>
          </div>

@@ -1,4 +1,5 @@
 @extends('layouts.app')
+<title>Online banking</title>
 
 @section('content')
 

@@ -9,6 +9,7 @@ class Payments1Controller extends Controller
     //
     public function payment1store(Request $req)
     {
+
         $payment= new Payment;
         $payment ->name=$req->name;
         $payment ->email=$req->email;

@@ -1,4 +1,5 @@
 @extends('layouts.app')
+<title>Credit card payment</title>
 
 @section('content')
 
@@ -23,9 +24,9 @@
                         </div>
                         @endif
                    
-                        <form method="POST" action="payment1store">
+                        <form method="POST" action="{{ url('payment1store')}}">
                   
-                            {{ csrf_field() }}
+                            @csrf
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
@@ -58,8 +59,8 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                    <label for="">Charity</label>
-                                        <input type="text" name="charity" class="form-control" placeholder="Children or low-income families" value="{{ old('charity') }}">
+                                    <label for="">Type of Charity</label>
+                                        <input type="text" name="charity" class="form-control" placeholder="Children, low-income families or zakat" value="{{ old('charity') }}">
                                         @if ($errors->has('charity'))
                                             <span class="text-danger">{{ $errors->first('charity') }}</span>
                                         @endif
@@ -97,7 +98,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                     <label for="">Expiry month</label>
-                                        <input type="text" name="expirymonth" class="form-control" placeholder="Example. September" value="{{ old('expirymonth') }}">
+                                        <input type="text" name="expirymonth" class="form-control" placeholder="Example. 0/9" value="{{ old('expirymonth') }}">
                                         @if ($errors->has('name'))
                                             <span class="text-danger">{{ $errors->first('expirymonth') }}</span>
                                         @endif

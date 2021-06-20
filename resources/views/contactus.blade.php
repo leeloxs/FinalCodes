@@ -1,5 +1,5 @@
 @extends('layouts.app')
- 
+<title>Contact form</title>
 @section('contactus')
 Contact us
 @endsection

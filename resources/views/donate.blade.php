@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+<title>Our services</title>
 @section('content')
 
    <!-- Services-->
@@ -21,7 +21,7 @@
                     </div>
                     <div class="col-md-4">
                     <a href="{{ route('items.showPage')  }}"><img src="/img/drop.png" alt="donate" style="width:140px;height:140px;"></a>
-                        <h4 class="my-3">Item Donation</h4>
+                    <h4 class="my-3" href="/items.showPage" target="_blank">Item Donation</h4> </a>
                         <p class="text-muted">Got extra item that you don't need? Post the item here and donate it to those who need it the most!</p>
                     </div>
                     <div class="col-md-4">

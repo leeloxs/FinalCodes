@@ -101999,7 +101999,7 @@ var render = function() {
                     attrs: {
                       id: "item-content",
                       rows: "3",
-                      placeholder: "Item Description",
+                      placeholder: "Enter the Item Description and Contact number",
                       required: ""
                     },
                     domProps: { value: _vm.body },

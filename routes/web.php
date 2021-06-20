@@ -38,7 +38,7 @@ Route::post('/myprofile-update','Frontend\UserController@profileupdate');
 Route::get('/payment1', function(){
     return view('payment1');
 });
-Route::post('payment1store',['Payments1Controller@payment1store']);
+Route::post('payment1store','Payments1Controller@payment1store');
 
 Route::get('/about', function () {
     return view('about');
@@ -134,7 +134,7 @@ Route::get('/payment2', function () {
 
 Route::view("profile",'profile');
 Route::view("form",'home');
-Route::post("submit",'Editprofile@save');
+// Route::post("submit",'Editprofile@save');
 //Route:get('/contact',[ContactController::class,'contact']);   //contact-form & contact function
 //Route::post('/send-message',[ContactController::class,'sendEmail'])->name(contact.send);
 

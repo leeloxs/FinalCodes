@@ -18,4 +18,6 @@ class Contact extends Model
     public $fillable = [
         'fname', 'lname', 'address1', 'address2', 'city', 'state', 'phone' , 'alternatephone'
     ];
+
+    protected $table = "profiles";
 }

@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+<title>Choose a payment method</title>
 @section('content')
     </div>
         <div class="text-center" style="background-color: #B0E0E6;">
